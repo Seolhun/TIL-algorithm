@@ -23,7 +23,7 @@
 재귀함수(Recursive Function) 혹은 재귀호출(Recursion)은 반복되야 하는 작업을 나눌 수 있는 조각으로 쪼갠뒤에 한 조각을 수행하고, 나머지를 자기 자신을 호출해 점진적으로 실행하는 함수를 가리킵니다.
 
 반복문을 재귀호출로 바꿔보는 것이 가장 좋은 예입니다. 간단하게 만들어보겠습니다.
-{{<highlight java>}}
+```java
 class Solution {
   static int sum(int n) {
     int result = 0;
@@ -40,7 +40,7 @@ class Solution {
     return n + recursiveSum(n -1);
   }
 }
-{{</highlight>}}
+```
 
 위처럼 재귀호출은 포문을 대체할 수 있습니다. 또한, 추가적인 로직을 통해서 훨씬 더 간단하고 효율적으로 로직을 구성할 수 있습니다.
 
@@ -69,7 +69,7 @@ class Solution {
 4
 ```
 
-{{<highlight java>}}
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -145,7 +145,7 @@ public class Solution {
         System.out.println(sb.toString());
     }
 }
-{{</highlight>}}
+```
 
 위의 알고리즘에서 가장 중요한 것은 중복을 제거하는 것입니다. (1, 3)이나 (3, 1)은 결국 같다고 봐야합니다. 즉, 앞의 작은 수를 기준으로 큰 수를 짝으로 지어나가면 중복 없이 이를 해결해나갈 수 있다고 얘기합니다. 그러므로, 가장 큰 시간복잡도를 구하는 방법은 10(10개로 한정)개의 친구가 모두 짝으로 선정할 수 있는 경우이며 이를 9 * 7 * 5 * 3 * 1 = 945라고 얘기하는 것입니다. 9부터 곱하는 이유는 자기 자신에서 9개의 경우의 수가 나오기 떄문입니다.
 
@@ -188,7 +188,7 @@ public class Solution {
 1514
 ```
 
-{{<highlight java>}}
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -295,7 +295,7 @@ public class Solution {
         System.out.println(sb.toString());
     }
 }
-{{</highlight>}}
+```
 
 이번 문제도 중요한 것은, 순서를 강제하는 것입니다. 위에 소풍 문제에서는 짝을 지어줄 때 앞의 작은 수를 강제하여 중복이 나타나지 않게 하였습니다. 이번에도 게임 판을 덮을 때 3개의 칸의 퍼즐에 기준점을 두고 중복을 제거하였습니다. 첫 번재의 출력 값이 0인 이유는, 3게의 칸으로 된 퍼즐로 13개의 칸을 모두 채울 수 없기 떄문입니다. 
 
@@ -412,7 +412,7 @@ public class Solution {
 - 2
 - 9
 
-{{<highlight java>}}
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -496,7 +496,7 @@ public class Solution {
         System.out.println(sb.toString());
     }
 }
-{{</highlight>}}
+```
 
 위 문제에서 중요한 것은 getResult() 메소드를 재귀호출하는 것입니다. +1씩 재귀호출 함으로써 최대 SWITCHES(10)에 도달할때까지 위 함수는 모든 시계가 12시를 가르칠때까지 모든 버튼을 최대 4번씩 누르게 됩니다.
 
