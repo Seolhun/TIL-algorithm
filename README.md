@@ -1,10 +1,20 @@
 # TIL-algorithm
 Repository to record algorithm we learn
 
+## Member
+- 지경희
+- 한주완
+- 이은지
+- 김성빈
+- 설훈
+
+## 스터디 진행사항
+- [Day1: 알고리즘 문제해결 전략 - 무식하게 풀기](https://github.com/Seolhun/TIL-algorithm/tree/master/day1/)
+- [Day2: 백준 알고리즘 단계별 풀기 - 문자열 사용하기 - Step 7](https://github.com/Seolhun/TIL-algorithm/tree/master/day2/)
+
 ## Repository 규칙
 ##### 각 Repository에 해당 알고리즘 코드를 같이 올립니다.
-- Example
-  - day1 - 무식하게 풀기(p.145 ~ 172)
+- day1 - 무식하게 풀기(p.145 ~ 172)
     - seolhun
         - README.md (해당 페이지 정리한 내용)
         - Picnic
@@ -14,12 +24,15 @@ Repository to record algorithm we learn
             - README.md
             - Solution.java(코드 내용)
         - ...
+    - YourName
+        - ...
+- day2 - ....
     - seolhun
-        - day2 - ....
-            - ...
+        - ...
+    - YourName
         - ...
 
-## 프로세스
+## 스터디 프로세스
 - 1차
     - [백준 단계별 알고리즘 풀기](https://www.acmicpc.net/step)
     1. 단게 별 문제를 풀어보기
@@ -31,7 +44,7 @@ Repository to record algorithm we learn
     3. 질문답변과 토론하기
     4. 각각의 질문 및 리뷰에 의견 답변하기
 
-## 방법
+## 스터디 방법
 - 알고리즘 책의 내용과 코드를 공유하여 의견 주고받는 스터디 만들기
 - 알고리즘 코드의 경우, 각자 코드리뷰 후 의견 달기 혹은 질문하기
 - 구루미로 주 1회 화면 공유와 통화로 부족한 의사소통 부분 채워나가기
