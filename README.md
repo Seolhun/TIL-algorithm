@@ -5,12 +5,12 @@ Repository to record algorithm we learn
 - 지경희
 - 한주완
 - 이은지
-- 김성빈
 - 설훈
 
 ## 스터디 진행사항
-- [Day1: 알고리즘 문제해결 전략 - 무식하게 풀기](https://github.com/Seolhun/TIL-algorithm/tree/master/day1/)
-- [Day2: 백준 알고리즘 단계별 풀기 - 문자열 사용하기 - Step 7](https://github.com/Seolhun/TIL-algorithm/tree/master/day2/)
+- [Day1: 알고리즘 문제해결 전략 : 무식하게 풀기](https://github.com/Seolhun/TIL-algorithm/tree/master/day1/)
+- [Day2: 백준 알고리즘 단계별 풀기 - 문자열 사용하기 : Step 7](https://github.com/Seolhun/TIL-algorithm/tree/master/day2/)
+- [Day3: 백준 알고리즘 단계별 풀기 - 규칙 찾기 : Step 8](https://github.com/Seolhun/TIL-algorithm/tree/master/day3/)
 
 ## Repository 규칙
 ##### 각 Repository에 해당 알고리즘 코드를 같이 올립니다.
@@ -35,9 +35,9 @@ Repository to record algorithm we learn
 ## 스터디 프로세스
 - 1차
     - [백준 단계별 알고리즘 풀기](https://www.acmicpc.net/step)
-    1. 단게 별 문제를 풀어보기
-    2. 코드리뷰 및 질문답변과 토론하기
-    3. 각각의 질문 및 리뷰에 의견 답변하기
+        1. 단게 별 문제를 풀어보기
+        2. 코드리뷰 및 질문답변과 토론하기
+        3. 각각의 질문 및 리뷰에 의견 답변하기
 - 2차
     1. 해당 관련 내용 책 정리/공유 하기
     2. 깃허브에 커밋/푸쉬 
