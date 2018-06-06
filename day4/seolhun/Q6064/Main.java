@@ -1,75 +1,56 @@
+import java.io.*;
+import java.util.StringTokenizer;
+
 /**
  * @author HunSeol
- * @see https://www.acmicpc.net/problem/10250
+ * @see https://www.acmicpc.net/problem/6064
  */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-// 속도 12088 KB
-// 속도 180 MS
+// 메모리 11728 KB
+// 속도 156 MS
 public class Main {
 
-    public static void main(String args[]) throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        // Testcase
-        int t = Integer.parseInt(bf.readLine());
-        for (int i = 0; i < t; i++) {
-            String[] Q = bf.readLine().split(" ");
-            int M = Integer.parseInt(Q[0]);
-            int N = Integer.parseInt(Q[1]);
-            int x = Integer.parseInt(Q[2]);
-            int y = Integer.parseInt(Q[3]);
-            System.out.println(kaing(M, N, x, y));
+    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private static BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
+
+    public static void main(String[] args) throws IOException {
+        int query = Integer.parseInt(reader.readLine());
+
+        while (query-- > 0) {
+            StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
+
+            int M = Integer.parseInt(tokenizer.nextToken()), N = Integer.parseInt(tokenizer.nextToken());
+            int x = Integer.parseInt(tokenizer.nextToken()), y = Integer.parseInt(tokenizer.nextToken());
+
+            writer.write(String.valueOf(year(M, N, x, y)) + "\n");
         }
+        writer.flush();
     }
 
-    static int kaing(int M, int N, int x, int y) {
-        int temp = 0;
-        int count = 1;
-
-        if (M > N) {
-			// M - N 교체
-            temp = N;
-            N = M;
-			M = temp;
-
-			// x - y 교체
-            temp = x;
-            x = y;
-            y = temp;
+    private static int year(int M, int N, int x, int y) {
+        int max = LCM(M, N);
+        for (int year = x; year <= max; year += M) {
+            if (year % N == y || (year % N == 0 && y == N)) {
+                return year;
+            }
         }
+        return -1;
+    }
 
-        int diffMN = Math.abs(M - N);
-        int diffXY;
-        if (x > y) {
-            diffXY = (y + N) - x;
-        } else {
-            diffXY = y - x;
-        }
-        int temp1 = 1;
-        int temp2 = 1;
+    private static int LCM(int a, int b) {
+        return (a * b) / GCD(a, b);
+    }
 
+    private static int GCD(int a, int b) {
+        int mod;
         while (true) {
-            if ((temp2 - temp1) == diffXY) {
-                count += (x - 1);
-                break;
-            } else {
-                if ((temp2 - diffMN) <= 0) {
-                    temp2 = N + temp2 - diffMN;
-                } else {
-                    temp2 = temp2 - diffMN;
-                }
-                count += M;
-            }
-
-            if (temp2 == 1) {
-                count = -1;
+            mod = a % b;
+            if (mod == 0) {
                 break;
             }
+            a = b;
+            b = mod;
         }
-        return count;
+        return b;
     }
-
 }
