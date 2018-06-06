@@ -30,10 +30,12 @@ public class Main {
         int count = 1;
 
         if (M > N) {
+			// M - N 교체
             temp = N;
             N = M;
 			M = temp;
 
+			// x - y 교체
             temp = x;
             x = y;
             y = temp;
