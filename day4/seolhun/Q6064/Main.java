@@ -32,7 +32,8 @@ public class Main {
         if (M > N) {
             temp = N;
             N = M;
-            M = temp;
+			M = temp;
+
             temp = x;
             x = y;
             y = temp;
