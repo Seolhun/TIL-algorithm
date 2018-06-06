@@ -1,5 +1,3 @@
-package com.algorithm.bj.progress.step8.done.Q2775;
-
 /**
  * @author HunSeol
  * @see https://www.acmicpc.net/problem/2775
