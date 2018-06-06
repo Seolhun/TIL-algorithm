@@ -12,6 +12,7 @@ Repository to record algorithm we learn
 - [Day2: 백준 알고리즘 단계별 풀기 - 문자열 사용하기 : Step 7](https://github.com/Seolhun/TIL-algorithm/tree/master/day2/)
 - [Day3: 백준 알고리즘 단계별 풀기 - 규칙 찾기 : Step 8](https://github.com/Seolhun/TIL-algorithm/tree/master/day3/)
 - [Day4: 백준 알고리즘 단계별 풀기 - 정렬해보기 : Step 9](https://github.com/Seolhun/TIL-algorithm/tree/master/day4/)
+- [Day5: 백준 알고리즘 단계별 풀기 - 소수찾기 : Step 10](https://github.com/Seolhun/TIL-algorithm/tree/master/day5/)
 
 ## Repository 규칙
 ##### 각 Repository에 해당 알고리즘 코드를 같이 올립니다.
